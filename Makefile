@@ -23,6 +23,10 @@ remove:
 logs:
 	docker-compose logs -f
 
+.PHONY: test
+test:
+	docker-compose run --rm --no-deps app yarn test
+
 # dependency management
 .PHONY: add-dependency
 add-dependency:
