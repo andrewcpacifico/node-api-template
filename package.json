@@ -8,6 +8,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "lint": "eslint lib",
+    "dev": "nodemon --nolazy lib/index.js",
     "start": "node ."
   },
   "dependencies": {
